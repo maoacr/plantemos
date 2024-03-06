@@ -115,7 +115,7 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Dona aquí', href: 'https://linktr.ee/fundacionplantemos', target: '_blank' }],
 };
 
 export const footerData = {
@@ -170,14 +170,15 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/fplantemos' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/fundacionplantemos' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/fundacionplantemos' },
+    { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://youtube.com/fundacionplantemos' },
+    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/573143126298' },
+    { ariaLabel: 'Mail', icon: 'tabler:brand-gmail', href: 'mailto:fundacionplantemos@gmail.com' },
+    { ariaLabel: 'Tiktok', icon: 'tabler:brand-tiktok', href: getAsset('https://tiktok.com') },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://blog.maoacr.com/"> @maoacr</a> · All rights reserved.
   `,
 };
