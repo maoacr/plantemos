@@ -1,30 +1,9 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks'; /*getBlogPermalink */
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
-    },
-    {
-      text: 'Pages',
+      text: 'Proyectos',
       links: [
         {
           text: 'Features (Anchor Link)',
@@ -38,22 +17,22 @@ export const headerData = {
           text: 'Pricing',
           href: getPermalink('/pricing'),
         },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        // {
+        //   text: 'About us',
+        //   href: getPermalink('/about'),
+        // },
+        // {
+        //   text: 'Contact',
+        //   href: getPermalink('/contact'),
+        // },
+        // {
+        //   text: 'Terms',
+        //   href: getPermalink('/terms'),
+        // },
+        // {
+        //   text: 'Privacy policy',
+        //   href: getPermalink('/privacy'),
+        // },
       ],
     },
     {
@@ -87,32 +66,37 @@ export const headerData = {
     },
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      href: getPermalink('/blog'),
+      // links: [
+      //   {
+      //     text: 'Blog List',
+      //     href: getBlogPermalink(),
+      //   },
+      //   {
+      //     text: 'Article',
+      //     href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+      //   },
+      //   {
+      //     text: 'Article (with MDX)',
+      //     href: getPermalink('markdown-elements-demo-post', 'post'),
+      //   },
+      //   {
+      //     text: 'Category Page',
+      //     href: getPermalink('tutorials', 'category'),
+      //   },
+      //   {
+      //     text: 'Tag Page',
+      //     href: getPermalink('astro', 'tag'),
+      //   },
+      // ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Nosotros',
+      href: getPermalink('/about'),
+    },
+    {
+      text: 'Contacto',
+      href: getPermalink('/contact'),
     },
   ],
   actions: [{ text: 'Dona aquí', href: 'https://linktr.ee/fundacionplantemos', target: '_blank' }],
