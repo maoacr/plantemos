@@ -1,13 +1,14 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+//import Features3 from '~/components/widgets/Features3.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'Nosotros',
 };
 ---
 
@@ -15,39 +16,42 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Nosotros"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      //src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Integrantes del equipo de trabajo de la Fundación Plantemos',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Queremos que sepas<br />
+      <span class="text-accent dark:text-white highlight"> quienes somos y porqué lo hacemos</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      La Fundación Plantemos es una entidad sin ánimo de lucro, de carácter ambiental y socio cultural, que desde el año
+      2020 viene desarrollando actividades de protección, conservación y restauración de ecosistemas naturales en la
+      Región del Sumapaz, así como acciones encaminadas a la educación ambiental, la soberanía alimentaria y el
+      ecoturismo rural y comunitario.
     </Fragment>
   </Hero>
+
+  <YouTube id="https://www.youtube.com/watch?v=-r6w3AmDMNY" />
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Algunos datos importantes"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Arboles sembrados', amount: '+5000' },
+      { title: 'Reforestaciones', amount: '+100' },
+      { title: 'Voluntarios', amount: '+300' },
+      { title: 'Años trabajando', amount: '+4' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     title="Our templates"
     subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
     columns={3}
@@ -72,11 +76,11 @@ const metadata = {
         icon: 'tabler:template',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     columns={3}
     isAfterContent={true}
     items={[
@@ -121,28 +125,23 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'Colorful Image',
     }}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Nuestra misión"
+    subtitle="Es la razón por la que nos levantamos día a día a trabajar y ponemos todas nuestra fuerzas para lograr los objetivos."
     items={[
       {
-        title: 'Customer-centric approach',
+        // title: 'Customer-centric approach',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Diseñar y ejecutar  estrategias y acciones que garanticen la conservación, defensa y uso sostenible de la naturaleza, el medio ambiente y los ecosistemas de la región del sumapaz y el territorio colombiano.',
       },
       {
-        title: 'Constant Improvement',
+        // title: 'Constant Improvement',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'Fortalecer el tejido social entre las comunidades rurales y urbanas a través de la educación ambiental, el arte, la cultura y  el ecoturismo rural, patrimonial y comunitario.',
       },
     ]}
   />
@@ -150,6 +149,26 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
+    title="Nuestra visión"
+    isReversed={true}
+    subtitle="Es de esta forma como nos proyectamos unos años y confiamos que el impácto de nuestro trabajo alcance nuestra visión."
+    items={[
+      {
+        // title: 'Customer-centric approach',
+        description:
+          'Para el año 2030 la Fundación Plantemos será la organización líder en la Región del Sumapaz, en la conservación de la biodiversidad, el desarrollo de procesos de ecoturismo sostenible.',
+      },
+      {
+        // title: 'Constant Improvement',
+        description:
+          'Seremos un referente técnico, para la toma de decisiones respecto a los retos de desarrollo sostenible que enfrentan las comunidades, la entidades públicas, la empresa privada y la academia.',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <!-- <Steps2
     title="Achievements"
     subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
     isReversed={true}
@@ -176,10 +195,10 @@ const metadata = {
         icon: 'tabler:award',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
-
+  <!-- 
   <Features2
     title="Our locations"
     tagline="Find us"
@@ -202,26 +221,24 @@ const metadata = {
         description: '3456 Lorem Ipsum St, 34567, São Paulo',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Soporte"
+    tagline="Comunícate con nosotros!"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+        title: 'Chatea con nosotros',
+        description: '(+57) 314 3126298',
+        icon: 'tabler:brand-whatsapp',
       },
       {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+        title: 'Escríbenos',
+        description: 'fundacionplantemos@gmail.com',
+        icon: 'tabler:mail',
       },
     ]}
   />
