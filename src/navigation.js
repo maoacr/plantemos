@@ -4,36 +4,36 @@ export const headerData = {
   links: [
     {
       text: 'Proyectos',
-      // links: [
-      //   {
-      //     text: 'Features (Anchor Link)',
-      //     href: getPermalink('/#features'),
-      //   },
-      //   {
-      //     text: 'Services',
-      //     href: getPermalink('/services'),
-      //   },
-      //   {
-      //     text: 'Pricing',
-      //     href: getPermalink('/pricing'),
-      //   },
-      //   // {
-      //   //   text: 'About us',
-      //   //   href: getPermalink('/about'),
-      //   // },
-      //   // {
-      //   //   text: 'Contact',
-      //   //   href: getPermalink('/contact'),
-      //   // },
-      //   // {
-      //   //   text: 'Terms',
-      //   //   href: getPermalink('/terms'),
-      //   // },
-      //   // {
-      //   //   text: 'Privacy policy',
-      //   //   href: getPermalink('/privacy'),
-      //   // },
-      // ],
+      links: [
+        {
+          text: 'Mi bosque',
+          // href: getPermalink('/#features'),
+        },
+        {
+          text: 'Mi huerta',
+          // href: getPermalink('/services'),
+        },
+        {
+          text: 'Adopta un Árbol',
+          // href: getPermalink('/pricing'),
+        },
+        // {
+        //   text: 'About us',
+        //   href: getPermalink('/about'),
+        // },
+        // {
+        //   text: 'Contact',
+        //   href: getPermalink('/contact'),
+        // },
+        // {
+        //   text: 'Terms',
+        //   href: getPermalink('/terms'),
+        // },
+        // {
+        //   text: 'Privacy policy',
+        //   href: getPermalink('/privacy'),
+        // },
+      ],
     },
     // {
     //   text: 'Landing',
@@ -64,6 +64,18 @@ export const headerData = {
     //     },
     //   ],
     // },
+    {
+      text: 'Rutas',
+      href: getPermalink('/rutas'),
+      links: [
+        {
+          text: 'Experiencia Arqueológica Quininí',
+        },
+        {
+          text: 'Ruta Ancestral Isla - Mesitas',
+        },
+      ],
+    },
     {
       text: 'Blog',
       href: getPermalink('/blog'),
