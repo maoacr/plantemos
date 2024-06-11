@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Mi bosque',
-          // href: getPermalink('/#features'),
+          href: getPermalink('/proyectos/mi-bosque'),
         },
         {
           text: 'Mi huerta',
