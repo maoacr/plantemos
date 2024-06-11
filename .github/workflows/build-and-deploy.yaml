@@ -31,4 +31,4 @@ jobs:
     - name: Deploy to Surge
       run: surge ./dist ${{vars.SURGE_PROD_URL}} --token ${{secrets.SURGE_TOKEN}}
     - name: Deploy to prod
-      run: surge ./dist fundacionplantemos.org
+      run: surge ./dist fundacionplantemos.org --token ${{secrets.SURGE_TOKEN}}
