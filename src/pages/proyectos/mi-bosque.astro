@@ -1,9 +1,35 @@
 ---
-import Layout from '~/layouts/Layout.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
 
 const title = `Mi Bosque`;
 ---
 
-<Layout metadata={{ title }}>
-  <h1>Mi Bosque</h1>
-</Layout>
+<PageLayout metadata={{ title }}>
+  <Hero>
+    <Fragment slot="title">
+      Vamos a sembrar <span class="text-accent dark:text-white highlight">1.200 árboles cada año</span> en la región del
+      Sumapaz, Colombia !
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span>
+        como estrategia de mitigación de carácter ambiental y socio-cultural. de los impactos del cambio climático y la
+        recuperación de ecosistemas que han sido afectados por la deforestación, el extractivismo y diversas causas
+        naturales.
+      </span>
+    </Fragment>
+  </Hero>
+  <YouTube id="https://www.youtube.com/watch?v=-5Tmp4fJJFo" class="mx-auto" />
+  <Stats
+    title="A la fecha hemos logrado"
+    subtitle="intervenir los municipios de Fusagasugá, Pasca, Silvania y Viotá"
+    stats={[
+      { title: 'Arboles sembrados', amount: '+1300' },
+      { title: 'Reforestaciones', amount: '+100' },
+      { title: 'Voluntarios', amount: '+300' },
+      { title: 'Años trabajando', amount: '+4' },
+    ]}
+  />
+</PageLayout>
