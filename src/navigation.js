@@ -11,11 +11,11 @@ export const headerData = {
         },
         {
           text: 'Mi huerta',
-          // href: getPermalink('/services'),
+          href: getPermalink('/proyectos/mi-huerta'),
         },
         {
           text: 'Adopta un Árbol',
-          // href: getPermalink('/pricing'),
+          href: getPermalink('/proyectos/adopta-un-arbol'),
         },
         // {
         //   text: 'About us',

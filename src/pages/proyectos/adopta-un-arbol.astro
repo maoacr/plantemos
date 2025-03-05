@@ -1,0 +1,44 @@
+---
+import HeroText from '~/components/widgets/HeroText.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+import Note from '~/components/widgets/Note.astro';
+import Headline from '~/components/blog/Headline.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const title = `Adopta un Árbol`;
+---
+
+<PageLayout metadata={{ title }}>
+  <Content
+    isReversed
+    tagline="Adopta un Árbol"
+    title="¡Vamos a plantar un árbol!"
+    items={[
+      {
+        title: 'Luchemos contra la deforestación',
+        description: 'Esta campaña aporta a la lucha contra la deforestación, y la destrucción del bosque nativo.',
+      },
+      {
+        title: 'recuperemos el hábitat de la flora y fauna',
+        description: 'Mediante jornadas de reforestación específicas en predios de alto riesgo ecosistémico.',
+      },
+      {
+        title: 'Recuperemos los ecosistemas de importancia hídrica',
+        description:
+          'Plantamos árboles de diferentes especies nativas que aportan a la recuperación del hábitat de la flora y fauna de nuestros bosques andinos y altoandinos, así como los ecosistemas de importancia hídrica en los territorios.',
+      },
+    ]}
+    image={{
+      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/plantemos-juntos.jpeg',
+      alt: 'Dos niñas sembrando un árbol',
+    }}
+  />
+  <Headline title="Con tu donación podemos sembrar más árboles en Colombia. " />
+
+  <FAQs
+    title="Al sumarte a esta iniciativa, recibes un certificado de donación con toda la información técnica de la especie y un material audiovisual del lugar en que se plantó tu árbol apadrinado."
+    tagline="¿Qué recibes al regalar un árbol?"
+  />
+</PageLayout>
