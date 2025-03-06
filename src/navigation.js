@@ -70,10 +70,11 @@ export const headerData = {
       links: [
         {
           text: 'Experiencia Arqueológica Quininí',
+          href: getPermalink('/rutas/experiencia-quinini'),
         },
-        {
-          text: 'Ruta Ancestral Isla - Mesitas',
-        },
+        // {
+        //   text: 'Ruta Ancestral Isla - Mesitas',
+        // },
       ],
     },
     {
